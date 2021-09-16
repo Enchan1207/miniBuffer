@@ -1,6 +1,6 @@
-/*
- * FIFOキュー 
-*/
+//
+// 組み込み向け小規模バッファ
+//
 #ifndef _BUFFER_H_
 #define _BUFFER_H_
 
@@ -8,12 +8,12 @@
 extern "C" {
 #endif /* __cplusplus */
 
-/* -------- */
+/* ---- includes ---- */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
-#define NDEBUG
+/* ---- defines ---- */
 
 // #define BUFFER_SIZE 100
 
@@ -26,7 +26,7 @@ extern "C" {
     #define uint8_t unsigned char
 #endif
 
-/* -------- */
+/* ---- structs ---- */
 typedef struct item {
     int index;
     double value;
@@ -48,7 +48,7 @@ typedef struct buffer {
 
 } Buffer;
 
-/* -------- */
+/* ---- functions ---- */
 
 // Initializer.c
 int initBuffer(Buffer* buffer, unsigned int length);

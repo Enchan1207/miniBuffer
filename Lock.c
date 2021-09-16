@@ -1,6 +1,6 @@
-/*
- * バッファの操作ロック
-*/
+//
+// ロック/アンロック処理
+//
 #include "Buffer.h"
 
 void lockBuffer(Buffer *buffer){

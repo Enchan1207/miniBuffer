@@ -1,6 +1,6 @@
-/*
- * 初期化
-*/
+//
+// バッファ初期化
+//
 #include "Buffer.h"
 
 int initBuffer(Buffer* buffer, unsigned int size){
