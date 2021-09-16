@@ -17,7 +17,7 @@ build:
 	@mv *.o $(build_path)
 
 	@echo "archiving..."
-	@ar rcs $(build_path)/Buffer.a $(build_path)/*.o
+	@cd $(build_path); gcc *.o -fPIC -shared -o Buffer.so
 
 cleanup:
-	@cd $(build_path);rm -f *.o
+	@cd $(build_path);rm -f *
